@@ -13,7 +13,14 @@ body {
 #contenedorImagen img {
     width: 30%;
 }
-
+#mode {
+  width: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
     /* FOOTER */
 
 footer {
@@ -71,6 +78,7 @@ a {
   overflow: hidden;
   box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, .7);
 }
+
 .galeria__a:hover img {
   filter: blur(2px);
   transform: rotate(10deg) scale(1.3);
