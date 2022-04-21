@@ -76,7 +76,8 @@ a {
   display: block;
   position: relative;
   overflow: hidden;
-  box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, .7);
+  /* box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, .7); */
+  box-shadow: 1px 1px 12px 12px grey;
 }
 
 .galeria__a:hover img {
@@ -157,5 +158,8 @@ a {
     }
     .imgPc {
         display: none;
+    }
+    .galeria__a {
+      box-shadow: 1px 1px 12px 12px grey !important;
     }
 }
