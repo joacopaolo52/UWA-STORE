@@ -4,8 +4,9 @@ html {
 body {
     background-color: black;
 }
-
+  /* IMAGEN LOGO */
 #contenedorImagen {
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +14,8 @@ body {
 #contenedorImagen img {
     width: 30%;
 }
+
+  /* MODO OSCURO/CLARO  */
 #mode {
   width: auto;
   padding: 1rem;
@@ -21,13 +24,27 @@ body {
   color: black;
   font-weight: bold;
 }
-    /* FOOTER */
+  /* TITULO */
+#titulo {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+h1{
+  font-size: 4rem;
+  letter-spacing:1rem;
+  color: white;
+}
+
+  /* FOOTER */
 
 footer {
   background-color: rgb(158, 156, 156);
   text-align: center;
   display: block;
   margin: auto;
+  margin-top: 7rem;
+  margin-bottom: 10rem;
   justify-content: center;
   align-items: center;
   color: black;
@@ -87,13 +104,10 @@ a {
 .galeria img {
   width: 100%;
   vertical-align: top;
-  height: 48rem;
+  height: auto;
   object-fit: cover;
   transition: transform 0.5s;
-}
-
-.imgCel {
-    display: none;
+  margin: auto;
 }
 
 .light-box {
@@ -111,8 +125,9 @@ a {
   transition: transform .3s ease-in-out;
 }
 .light-box img{
-  width: 75vw;
+  width: auto;
   max-height: 100vh;
+  margin: 2rem;
 }
 .light-box:target {
   transform: scale(1);
@@ -141,6 +156,16 @@ a {
   line-height: 6.4rem;
   border-radius: 50%;
 }
+
+a h4 {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  font-style: bold;
+  text-align: center;
+}
+
+
 @media (min-width:600px) and (max-width:960px) {
   .galeria {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -153,13 +178,24 @@ a {
 } 
 
 @media (min-width:320px) and (max-width:768px) {
-    .imgCel {
-        display: flex;
+    h1 {
+      font-size: 2rem;
     }
-    .imgPc {
-        display: none;
+    .light-box img{
+      width: 90vw;
+      max-height: auto;
     }
-    .galeria__a {
-      box-shadow: 1px 1px 12px 12px grey !important;
+    a.next {
+      position: absolute;
+      bottom: 5rem !important;
+      right: 3rem;
+    }
+    a.past {
+      position: absolute;
+      bottom: 5rem !important;
+      left: 3rem !important;
+    }
+    a h4 {
+      font-size: 1.4rem;
     }
 }
