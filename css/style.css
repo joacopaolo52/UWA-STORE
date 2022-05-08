@@ -165,6 +165,68 @@ a h4 {
   text-align: center;
 }
 
+  /* SOBRE NOSOTROS */
+
+  #about {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+#about-1 {
+  color: white;
+  margin: auto;
+  height: auto;
+  width: 60vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px 12px 12px rgb(209, 208, 208);
+  padding: 2rem;
+}
+
+#about-1 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 4rem;
+}
+
+#about-1 p {
+  font-size: 2rem;
+  margin: 4rem;
+}
+
+#about-2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+#about-2 img {
+  width: 7.5rem;
+  height: 4.5rem;
+}
+
+#about-1 a {
+  border: 0.1rem solid white;
+  padding: 1rem;
+  color: black;
+  background-color: white;
+  margin: 3rem;
+  font-size: 1.5rem;
+}
+#about-1 a:hover {
+  color: white;
+  background-color: black;
+  transition: all 1s;
+}
+
+
+
 
 @media (min-width:600px) and (max-width:960px) {
   .galeria {
@@ -174,6 +236,14 @@ a h4 {
 @media (min-width:320px) and (max-width:500px){
   .galeria {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  #about-1 h2{
+    font-size: 2.2rem;
+    margin: 2rem;
+  }
+  #about-1 p {
+    font-size: 1.5rem;
+    margin: 2rem;
   }
 } 
 
@@ -197,5 +267,8 @@ a h4 {
     }
     a h4 {
       font-size: 1.4rem;
+    }
+    #about-1 {
+      width: 80vw;
     }
 }
